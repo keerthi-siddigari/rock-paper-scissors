@@ -1,0 +1,107 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to right,rgb(165, 118, 226),rgb(238, 172, 86));
+}
+h1{
+    text-align: center;
+}
+#container{
+    display: flex;
+    justify-content:center;
+}
+.buttons{
+    height: 11rem;
+    width: 11rem;
+    font-size: 6rem;
+    margin: 10px;
+    border: 5px solid black;
+    border-radius: 50%;
+    background-color: rgb(179, 178, 235);
+}
+div{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight:900;
+}
+#result{
+    font-size: 3.5rem;
+    margin :30px 0px;
+}
+.scoreDisplay{
+  font-size: 2rem;
+}
+.buttons:hover{
+    background-color: rgb(124, 124, 209);
+    box-shadow: 0px 0px 5px 5px rgb(68, 67, 67);
+}
+.buttons:active{
+    background-color: rgb(54, 101, 172);
+    transform:translateY(3px);
+    box-shadow: 0px 0px 5px 5px rgb(68, 67, 67);
+}
+.greenText,#playerScoreDisplay{
+    color:green;
+}
+.redText,#computerScoreDisplay{
+    color:red;
+}
+
+@media(max-width:480px){   /*for mobile devices*/
+    body{
+        margin-top: 12vh;
+    }
+    .buttons{
+        height: 30vw;
+        width: 30vw;
+        margin: 5px;
+        font-size: 3.8rem;
+    }
+    #result,.scoreDisplay,
+    #playerDisplay,#computerDisplay{
+        font-size: 6vw;
+    }
+    h1{
+        font-size: 6vw;
+        font-weight:bolder;
+    }
+}
+@media(min-width:481px) and (max-width:980px){ /*tablets and small desktops*/
+    
+    .buttons{
+       height:20vh;
+       width:20vh;
+       font-size: 13vh;
+    }
+    #result,.scoreDisplay,
+    #playerDisplay,#computerDisplay{
+        font-size: 5vh;
+    }
+    h1{
+        font-size: 5vh;
+        font-weight:bolder;
+    }
+
+}
+
+@media(min-width:981px) and (max-width:2560px){  /*desktops*/
+    .buttons{
+       height:15vw;
+       width:15vw;
+       font-size: 9vw;
+    }
+    #result,.scoreDisplay,
+    #playerDisplay,#computerDisplay{
+        font-size: 5vh;
+    }
+    h1{
+        font-size: 5vh;
+        font-weight:bolder;
+    }
+
+}
+
+
+
+
+
